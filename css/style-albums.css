@@ -1,0 +1,83 @@
+.main{
+	width: 100%;
+	margin-top:20vh;
+}
+*{
+	text-align: center;
+}
+.albums{
+	margin:0px 12vw;
+	margin-top: 3vw;
+	width: 80%;
+	display: flex; 
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: stretch;
+
+}
+.album{
+	width: 30%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+.album *{
+	text-align: left;
+}
+.album img{
+	width: 80%;
+	height: 19.2vw;
+	border-radius: 4px;
+}
+.album::before{
+	content:'';
+	width: 19.2%;
+	height: 19.2vw;
+	position: absolute;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.album:hover::before{
+	background: rgba(0,0,0,0.3);
+
+}
+.album::after{
+	content: '';
+	position: absolute;
+	background-image: url(../img/Tommy Taylor.jpg) 100% 0%;
+	background-size: cover;
+}
+p{
+	float:left;
+	font-size: 1.3vw;
+}
+table{
+	border-spacing: 0;
+	margin:auto;
+	width: 75%;
+	padding:5vh 0;
+}
+table th{
+	font-family: 'Montserrat-Medium';
+}
+table td{
+	border-bottom: 0.1vw solid black;
+	font-family: 'Montserrat-Regular';
+}
+table tr td:first-child{
+	font-family: 'Montserrat-Bold';
+}
+table tr td:last-child,tr th:last-child{
+	text-align: left;
+}
+table td{
+	background: #fff;
+}
+h2{
+	font-family: 'Montserrat-Regular';
+	font-size: 2.5vw;
+}
+table img{
+	width:8%;
+	vertical-align: middle;
+	padding-right: 15px;
+}

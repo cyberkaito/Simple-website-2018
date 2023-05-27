@@ -1,0 +1,70 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Дискография | Black Honey</title>
+	<link rel="stylesheet" href="css/style-default.css">
+	<link rel="stylesheet" href="css/style-albums.css">
+	<link rel="shortcut icon" href="css/icon.ico">
+</head>
+<body>
+<!-- ------------HEADER----------------- -->
+	<div class="header">
+		<div>
+			<div class="name">
+				<h1><a href="index.html">Black Honey</a></h1>
+			</div>
+			<ul>
+				<a href="index.html"><li>Биография</li></a>
+				<a href="albums.html"><li>Дискография</li></a>
+			</ul>
+		</div>
+	</div>
+<!-- ------------HEADER----------------- -->
+
+<div class="main">
+	<h2>Альбомы</h2>
+	<div class="albums">
+		<div class="album">
+			<a href="albums/Black Honey(Delux Edition).html"><img src="img/albums/Black Honey(Delux Edition).jpg" alt="Black Honey (Deluxe Edition)" /></a><br>
+			<a href=""><h3>Black Honey (Deluxe Edition)</h3></a>
+			<p class="date">2018</p>
+		</div>
+		<div class="album">
+			<a href="albums/Somebody Better.html"><img src="img/albums/Somebody Better.jpg" alt="Somebody Better" /></a><br>
+			<a href=""><h3>Somebody Better</h3></a><br>
+			<p class="date">2017</p>
+		</div>
+		<div class="album">
+			<a href="albums/Headspin.html"><img src="img/albums/Headspin.jpg" alt="Headspin" /></a><br>
+			<a href=""><h3>Headspin</h3></a><br>
+			<p class="date">2016</p>
+		</div>
+		<div class="album">
+			<a href="albums/Hello Today.html"><img src="img/albums/Hello Today.jpg" alt="Hello Today" /></a><br>
+			<a href=""><h3>Hello Today</h3></a><br>
+			<p class="date">2016</p>
+		</div>
+		<div class="album">
+			<a href="albums/Spinning Wheel.html"><img src="img/albums/Spinning Wheel.jpg" alt="Spinning Wheel" /></a><br>
+			<a href=""><h3>Spinning Wheel</h3></a><br>
+			<p class="date">2015</p>
+		</div>
+		<div class="album">
+			<a href="albums/Black Honey EP.html"><img src="img/albums/Black Honey EP.jpg" alt="Black Honey EP" /></a><br>
+			<a href=""><h3>Black Honey EP</h3></a><br>
+			<p class="date">2014</p>
+		</div>
+	</div>
+</div>
+<script src="attachment/js/jquery-3.3.1.min.js"></script>
+<script src="attachment/js/js.js"></script>
+<script>
+	$(document).ready(function(){
+			$(".album").click(function(){
+				var m = $(this).children('a').attr('href');
+				window.location.href = m;
+			});
+	})
+</script>
+</body>
+</html>

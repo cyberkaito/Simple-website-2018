@@ -1,0 +1,176 @@
+@font-face{
+	font-family: 'Montserrat-Bold';
+	src: url('../attachment/fonts/Montserrat-Bold.ttf');
+}
+@font-face{
+	font-family: 'Montserrat-Light';
+	src: url('../attachment/fonts/Montserrat-Light.ttf');
+}
+@font-face{
+	font-family: 'Montserrat-Medium';
+	src: url('../attachment/fonts/Montserrat-Medium.ttf');
+}
+@font-face{
+	font-family: 'Montserrat-Regular';
+	src: url('../attachment/fonts/Montserrat-Regular.ttf');
+}
+@font-face{
+	font-family: '15347';
+	src: url('../attachment/fonts/15347.ttf');
+}
+/*-----------------BASIC----------------*/
+body{
+	background-color: whitesmoke;
+	margin:0 !important;
+	padding: 0 !important;
+}
+*{
+	outline: none;
+	text-decoration: none;
+	color:black;
+	font-family: Montserrat-Light !important;
+	margin:0px;
+	font-size: 1.5vw !important; 
+	letter-spacing: 0.2vw;
+	word-wrap: break-word;
+	text-decoration: none !important;
+}
+h1 a,h1{
+	font-family:'15347' !important;
+	color:black !important;
+	word-spacing: 5px;
+	font-size: 2.5vw !important;
+}
+img{
+	width: 100%;
+}
+li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px 30px;
+	margin: 0px -0.29vw;
+}
+p{
+	font-size: 1.7vw !important;
+	text-align: center;
+	font-family: 'Montserrat-Regular' !important;
+}
+li:hover{
+	background: rgba(0,0,0,0.5)
+}
+a li{
+	color:black !important;
+	font-family: 'Montserrat-Medium' !important;
+}
+/*-----------------BASIC-----------------------------*/
+
+/*-----------------HEADER---------------------------*/
+div.header{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	-moz-user-select: none;
+	user-select: none;
+}
+div.header *{
+	color:white;
+}
+.header h1 a{
+	text-shadow:
+        0.9px 4.00px 0 rgb(255, 100, 0);
+    animation:Transform 15s linear infinite;
+    -ms-animation:Transform 15s linear infinite;
+}
+div.header>div:nth-child(1){
+	width: 100%;
+	position: fixed;
+	display: flex;
+	z-index: 999;
+	background:rgba(0,0,0,0.1);
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	align-items: center;
+	transition: all 1s;
+	-ms-transition: all 1s;
+	box-shadow: 0px 5px 8px 1px rgba(0,0,0,0.3);
+}
+/*-----------------HEADER--------------------------------*/
+
+@keyframes Transform{
+	10%{
+		text-shadow:
+        0.9px 4.00px 0 rgb(255, 100, 0);
+	}
+	20%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(255, 140, 0),
+        0.3px 1.75px 0 rgb(255, 160, 0),
+        0.5px 2.50px 0 rgb(255, 180, 0),
+        0.7px 3.25px 0 rgb(255, 200, 0),
+        0.9px 4.00px 0 rgb(255, 240, 0);
+	}
+	30%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(0, 255, 0),
+        0.3px 1.75px 0 rgb(0, 255, 25),
+        0.5px 2.50px 0 rgb(0, 255, 50),
+        0.7px 3.25px 0 rgb(0, 255, 75),
+        0.9px 4.00px 0 rgb(0, 255, 100);
+	}
+	40%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(0, 255, 125),
+        0.3px 1.75px 0 rgb(0, 255, 150),
+        0.5px 2.50px 0 rgb(0, 255, 175),
+        0.7px 3.25px 0 rgb(0, 255, 200),
+        0.9px 4.00px 0 rgb(0, 255, 225);
+	}
+	50%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(0, 255, 255),
+        0.3px 1.75px 0 rgb(0, 225, 255),
+        0.5px 2.50px 0 rgb(0, 200, 255),
+        0.7px 3.25px 0 rgb(0, 175, 255),
+        0.9px 4.00px 0 rgb(0, 150, 255);
+	}
+	60%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(0,125, 255),
+        0.3px 1.75px 0 rgb(0,100, 255),
+        0.5px 2.50px 0 rgb(0,75,  255),
+        0.7px 3.25px 0 rgb(0,50,  255),
+        0.9px 4.00px 0 rgb(0,25,  255);
+	}
+	70%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(0,  0,255),
+        0.3px 1.75px 0 rgb(25, 0,255),
+        0.5px 2.50px 0 rgb(50, 0, 255),
+        0.7px 3.25px 0 rgb(75, 0, 255),
+        0.9px 4.00px 0 rgb(100,0,  255);
+	}
+	80%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(125,0,  255),
+        0.3px 1.75px 0 rgb(150,0, 255),
+        0.5px 2.50px 0 rgb(175,0,  255),
+        0.7px 3.25px 0 rgb(200,0,  255),
+        0.9px 4.00px 0 rgb(225,0,  255);
+	}
+	90%{
+		text-shadow:
+        0.1px 1.00px 0 rgb(255,0,  255),
+        0.3px 1.75px 0 rgb(255,0, 225),
+        0.5px 2.50px 0 rgb(255,0,  125),
+        0.7px 3.25px 0 rgb(255,0,  100),
+        0.9px 4.00px 0 rgb(255,0,  75);
+	}
+	100%{
+		text-shadow:
+		0.1px 1.00px 0 rgb(255, 0, 0),
+		0.3px 1.75px 0 rgb(255, 40, 0),
+		0.5px 2.50px 0 rgb(255, 60, 0),
+		0.7px 3.25px 0 rgb(255, 80, 0),
+		0.9px 4.00px 0 rgb(255, 100, 0);
+	}
+}
